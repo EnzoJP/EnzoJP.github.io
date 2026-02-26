@@ -6,7 +6,7 @@
 
 :root {
     --side-padding: 100px; 
-    --vertical-padding: 50px; /* reducido para acercar secciones entre sí */
+    --vertical-padding: 50px; 
 }
 
 body {
@@ -32,7 +32,7 @@ nav a {
     color: #b6ff9f;
     margin-left: 20px;
     transition: 0.3s;
-    font-size: 1.05rem; /* tamaño de letra del navbar aumentado */
+    font-size: 1.05rem; 
 }
 
 nav a:hover {
@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 55vh; /* menor altura para que parte de las secciones siguientes queden visibles */
+    min-height: 55vh; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,7 +91,7 @@ h1, h2, h3 {
 }
 
 .project {
-    margin-bottom: 24px; /* menos espacio entre proyectos/secciones */
+    margin-bottom: 24px; 
 }
 
 .project h3 {
