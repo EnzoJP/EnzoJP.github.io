@@ -187,7 +187,6 @@ a {
     color: inherit;
 }
 
-
 .tech-icons {
     display: flex;
     gap: 30px;
@@ -232,7 +231,6 @@ a {
     transform: scale(1.1);
 }
 
-
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -243,7 +241,6 @@ a {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 body::after {
     content: "";
@@ -276,4 +273,117 @@ body::after {
 @keyframes blink {
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
+}
+
+/* Responsive adjustments */
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 88px;
+}
+
+@media (max-width: 900px) {
+    :root {
+        --side-padding: 28px;
+        --nav-height: 64px;
+    }
+
+    nav {
+        padding: 12px var(--side-padding);
+    }
+
+    nav a, .nav-links a {
+        font-size: 0.98rem;
+    }
+
+    .hero {
+        min-height: 45vh;
+        padding: 28px var(--side-padding);
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .hero-avatar img {
+        width: 120px;
+    }
+
+    .project {
+        gap: 18px;
+    }
+
+    .project-image img {
+        width: 220px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --side-padding: 16px;
+        --nav-height: 56px;
+    }
+
+    nav {
+        padding: 10px var(--side-padding);
+    }
+
+    .nav-profile .nav-name,
+    .nav-profile .nav-role {
+        display: none; /* show only avatar to save space */
+    }
+
+    .nav-profile img {
+        width: 36px;
+        height: 36px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        margin-left: 12px;
+    }
+
+    .hero {
+        min-height: 42vh;
+        padding: 18px var(--side-padding);
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .tech-item {
+        width: 72px;
+    }
+
+    .tech-item i, .tech-item img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-links a {
+        display: inline-block;
+        margin-top: 8px;
+    }
 }
